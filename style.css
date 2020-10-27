@@ -1,5 +1,57 @@
 html,body{ height: 100%;}
-.bloco {min-height: 100%; padding-top: 80px;}
+.bloco {min-height: 100%; padding-top: 94px;}
+/*LOGO E NAVBAR CSS INICIO*/
+.blue-logo{
+  background-color: #6F7BF5;
+}
+.logo_text {
+  font-size: 0;
+  margin: 0;
+}
+.logo_img{
+  margin-top: 17px;
+}
+nav {
+  color: #fff;
+  background-color: #ee6e73;
+  width: 100%;
+  height: 94px;
+  line-height: 94px;
+}
+nav.nav-extended .nav-wrapper {
+  min-height: 94px;
+  height: auto;
+}
+.navbar-fixed {
+  position: absolute;
+  height: 94px;
+  z-index: 997;
+}
+nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons {
+  display: block;
+  font-size: 24px;
+  height: 94px;
+  line-height: 94px;
+}
+.sidenav {
+  background: url(./img/menumobile.png);
+}
+.sidenav li>a {
+  color: #fff;
+  font-weight: 100;
+}
+
+.navbar {
+  background-color: transparent;
+}
+.navbar ul a:hover{
+  background-color: transparent;
+  color: #6F7BF5;
+}
+
+/*LOGO E NAVBAR CSS FIM*/
 
 /*SECTION CSS INICIO*/
 .section{
@@ -16,48 +68,16 @@ html,body{ height: 100%;}
 
 }
 .banner p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.8rem;
 }
 /*SECTION CSS FIM*/
 
-/*LOGO E NAVBAR CSS INICIO*/
-.logo_text {
-  font-size: 0;
-  margin: 0;
-}
-.logo_img{
-  margin-top: 13px;
-}
-ul {
-  padding: 13px;
-}
-nav {
-  color: #fff;
-  background-color: #ee6e73;
-  width: 100%;
-  height: 80px;
-  line-height: 56px;
-}
-nav.nav-extended .nav-wrapper {
-  min-height: 80px;
-  height: auto;
-}
-.navbar-fixed {
-  position: absolute;
-  height: 94px;
-  z-index: 997;
-}
-.navbar {
-  background-color: transparent;
-}
-/*LOGO E NAVBAR CSS FIM*/
-
 /*SECTION ANIMATION INICIO*/
 @keyframes mudarimg {
-  40%{background-image: url("img/keyongcode2.jpg");}
-  80%{background-image: url("img/keyongcode3.jpg");}
-  100%{background-image: url("img/keyongcode.jpg");}
+  40%{background-image: url("img/keyongcode.jpg");}
+  80%{background-image: url("img/keyongcode2.jpg");}
+  100%{background-image: url("img/keyongcode3.jpg");}
 }
 /*SECTION ANIMATION fim*/
 
@@ -67,7 +87,7 @@ nav.nav-extended .nav-wrapper {
 }
 @media only screen and (min-width: 601px) {
   .banner h2 {
-    font-size: 4 rem;
+    font-size: 4rem;
   }  
 }
 

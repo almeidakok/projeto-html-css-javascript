@@ -14,24 +14,35 @@
 </head>
 <body>
     <header>
+        <!--MENU MOBILE-->
+        <ul id="slide-out" class="sidenav">
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre Keyong Code</a></li>
+            <li><a href="">Unidade</a></li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="">Contato</a></li>
+        </ul>
+        
         <div class="navbar-fixed">
-        <nav class="navbar">
+        <nav class="navbar z-depth-0">
             <div class="nav-wrapper container">
                 <h1 class="logo_text">KeyongCode Developer></h1>
-                <a href=""><img class="logo_img" src="img/KeyongCode Developer.png" alt="KEYONG CODE"></a>
+                <a href=""><img class="logo_img" src="img/KeyongCodeDeveloper.png" alt="KEYONG CODE"></a>
                 
                 <ul class="right light hide-on-med-and-down">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">SOBRE</a></li>
-                    <li><a href="">SERVIÇOS</a></li>
-                    <li><a href="">CONTATO</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre Keyong Code</a></li>
+                    <li><a href="">Unidade</a></li>
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="">Contato</a></li>
                 </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 
             </div>
         </nav>
         </div>
     </header>
-<!--SECTION INICIO-->
+    <!--SECTION INICIO-->
     <section class="section bloco">
         <div class="row container banner">
             <div class="col s12 center">
@@ -45,10 +56,20 @@
             </div>
         </div>
     </section>
-<!--SECTION FIM-->
+    <!--SECTION FIM-->
+    
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <!--MATERIALIZE JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--JAVASCRIPT-->
+    <script>
+    //MENU MOBILE    
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+    </script>
 </body>
 </html>
