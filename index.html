@@ -16,11 +16,11 @@
     <header>
         <!--MENU MOBILE-->
         <ul id="slide-out" class="sidenav">
-            <li><a href="">Home</a></li>
-            <li><a href="">Sobre Keyong Code</a></li>
-            <li><a href="">Unidade</a></li>
-            <li><a href="">Serviços</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#unidade">Unidade</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
         
         <div class="navbar-fixed">
@@ -30,12 +30,14 @@
                 <a href=""><img class="logo_img" src="img/KeyongCodeDeveloper.png" alt="KEYONG CODE"></a>
                 
                 <ul class="right light hide-on-med-and-down">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre Keyong Code</a></li>
-                    <li><a href="">Unidade</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><i class="material-icons">home</i></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#unidade">Unidade</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
+                
                 <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 
             </div>
@@ -43,20 +45,74 @@
         </div>
     </header>
     <!--SECTION INICIO-->
-    <section class="section bloco">
+    <section class="home bloco scrollspy" id="home">
         <div class="row container banner">
             <div class="col s12 center">
                 <h2 class="white-text">Crie seu Site na<br>KeyongCode Developer</h2>
                 <p class="white-text light">Um novo conceito em criação de Sites e Landing Pages 
                 para seu negócio digital</p>
                 <div class="row button">
-                    <a class="btn btn-large blue">Sobre nós</a>
-                    <a class="btn btn-large white black-text">Contato</a>
+                    <a href="#sobre" class="btn btn-large blue">Sobre nós</a>
+                    <a href="#contato" class="btn btn-large white black-text">Contato</a>
                 </div>
             </div>
         </div>
     </section>
     <!--SECTION FIM-->
+
+    <!-- SECTION SOBRE INICIO-->
+    <section class="sobre bloco scrollspy" id="sobre">
+        <div class="row container">
+            <div class="col s12">
+                <h2 class="light center">Sobre nós</h2>
+            </div>
+
+            <div class="col s12 l6">
+                <p class="light">
+                    A KeyongCode Developer chegou em Nanuque e região trazendo um novo conceito em criação de Sites e Landing Pages, para seu negocio digital.<br>
+                    Site acessível para todo tipo de dispositivo (celular, tablet, computador.<br>
+                    Um único site que se adpta automaticamente.<br>
+                    Proporciona ótima experiência para todos os usuários do site.<br>
+                    Buscadores como Google priorizam sites responsivos.<br>
+                    Conheça todas as vantagens de ter seu site com design responsivo.
+                </p>
+            </div>
+
+            <div class="col s12 l6">
+                <div class="carousel carousel-slider">
+                    <a href="#one" class="carousel-item"><img src="./img/banner-1.jpg" alt="Imagem institucional"></a>
+                    <a href="#two" class="carousel-item"><img src="./img/banner-2.jpg" alt="Imagem institucional"></a>
+                    <a href="#three" class="carousel-item"><img src="./img/banner-3.jpg" alt="Imagem institucional"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row blue-logo missao-visao-valores">
+            <div class="container">
+                <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">directions_run</i></span>
+                    <h3 class="light">Missão</h3>
+                    <p class="light"></p>
+                </article>
+
+                <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">visibility</i></span>
+                    <h3 class="light">Visão</h3>
+                    <p class="light"></p>
+                </article>
+
+                <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">star_rate</i></span>
+                    <h3 class="light">Valores</h3>
+                    <p class="light"></p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
     
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -66,10 +122,30 @@
 
     <!--JAVASCRIPT-->
     <script>
-    //MENU MOBILE    
+    //INICIALIZÇÃO
+        // MENU MOBILE
     $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+        $('.sidenav').sidenav();
+        // LINK INTERNO
+        $(".scrollspy").scrollspy({
+            scrolloffset: 0
+        });
+       
+    });
+
+    $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+    });
+
+    // NAV COLOR
+    $(window).on("scroll", function(){
+        if($(window).scrollTop() > 100) {
+            $(".navbar").addClass("nav-color")
+        } else {
+            $(".navbar").removeClass("nav-color")
+        }
+    })
     </script>
 </body>
 </html>

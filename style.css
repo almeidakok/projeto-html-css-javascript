@@ -1,6 +1,6 @@
 html,body{ height: 100%;}
 .bloco {min-height: 100%; padding-top: 94px;}
-/*LOGO E NAVBAR CSS INICIO*/
+/*LOGO E NAVBAR INICIO*/
 .blue-logo{
   background-color: #6F7BF5;
 }
@@ -12,88 +12,129 @@ html,body{ height: 100%;}
   margin-top: 17px;
 }
 nav {
-  color: #fff;
-  background-color: #ee6e73;
-  width: 100%;
-  height: 94px;
-  line-height: 94px;
+  text-transform: uppercase;
 }
 nav.nav-extended .nav-wrapper {
   min-height: 94px;
-  height: auto;
 }
 .navbar-fixed {
   position: absolute;
   height: 94px;
-  z-index: 997;
 }
-nav i,
-nav [class^="mdi-"], nav [class*="mdi-"],
-nav i.material-icons {
-  display: block;
-  font-size: 24px;
-  height: 94px;
-  line-height: 94px;
-}
-.sidenav {
-  background: url(./img/menumobile.png);
-}
-.sidenav li>a {
-  color: #fff;
-  font-weight: 100;
-}
-
 .navbar {
   background-color: transparent;
+  transition: 0.5s linear;
 }
 .navbar ul a:hover{
   background-color: transparent;
   color: #6F7BF5;
 }
-
+.nav-color {
+  background-color: rgba(0,0,0,0.7);
+  transition: 0.5s linear;
+}
+/* CSS MOBILE MENU */
+nav, nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons, nav a.button-collapse i {
+  height: 94px;
+  line-height: 94px;
+}
+.sidenav {
+  background: url('./img/menumobile.png');
+}
+.sidenav li>a {
+  color: #fff;
+  font-weight: 100;
+  text-transform: uppercase;
+}
 /*LOGO E NAVBAR CSS FIM*/
 
-/*SECTION CSS INICIO*/
-.section{
+/*SECTION HOME INICIO*/
+/*ANIMATION*/
+.home {
   animation: mudarimg 20s infinite;
-  background-image: url("img/keyongcode.jpg");
+  background-image: url('img/keyongcode.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  
+}
+@keyframes mudarimg {
+  40%{background-image: url('./img/keyongcode.jpg');}
+  80%{background-image: url('./img/keyongcode2.jpg');}
+  100%{background-image: url('./img/keyongcode3.jpg');}
 }
 .banner h2{
   font-size: 2.5rem;
   font-weight: 900;
   text-transform: uppercase;
-
 }
 .banner p{
   font-size: 1.2rem;
   line-height: 1.8rem;
-}
-/*SECTION CSS FIM*/
+  text-transform: uppercase;
+}/*SECTION HOME FIM*/
 
-/*SECTION ANIMATION INICIO*/
-@keyframes mudarimg {
-  40%{background-image: url("img/keyongcode.jpg");}
-  80%{background-image: url("img/keyongcode2.jpg");}
-  100%{background-image: url("img/keyongcode3.jpg");}
+/*SECTION SOBRE INICIO*/
+.sobre {
+  background-image: url('./img/textura1.png');
 }
-/*SECTION ANIMATION fim*/
+.sobre h2 {
+  font-size: 2.5rem;
+  color: #212121;
+  text-transform: uppercase;
+}
+.sobre h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  border-top: 2px solid #6F7BF5;
+  margin: 15px auto;
+}
+.sobre p {
+  line-height: 2rem;
+  text-align: justify;
+  text-transform: uppercase;
+}
+.sobre .missao-visao-valores {
+  padding: 20px 0;
+  margin-top: 35px;
+}
+.sobre .missao-visao-valores .icon {
+  color: #fff;
+}
+.sobre .missao-visao-valores h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.sobre .missao-visao-valores p {
+  color: #fff;
+  text-align: center;
+}/*SECTION SOBRE FIM*/
+
+
 
 /*RESPONSIVE MEDIA INICIO*/
+/* SMARTPHONE */
 @media only screen and (max-width: 480px) {
   
 }
+/* TABLETS */
 @media only screen and (min-width: 601px) {
   .banner h2 {
     font-size: 4rem;
+  }
+  .container {
+    width: 85%;
   }  
 }
-
+/* DESKTOP */
 @media only screen and (min-width: 993px) {
   .banner h2 {
     font-size: 3.5rem;
+  }
+  .container {
+    width: 90%;
   }
 }
 /*RESPONSIVE MEDIA FIM*/
