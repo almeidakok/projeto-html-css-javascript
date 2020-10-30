@@ -1,5 +1,5 @@
 html,body{ height: 100%;}
-.bloco {min-height: 100%; padding-top: 94px;}
+.bloco {min-height: 50%; padding-top: 94px;}
 /*LOGO E NAVBAR INICIO*/
 .blue-logo{
   background-color: #6F7BF5;
@@ -10,9 +10,6 @@ html,body{ height: 100%;}
 }
 .logo_img{
   margin-top: 17px;
-}
-nav {
-  text-transform: uppercase;
 }
 nav.nav-extended .nav-wrapper {
   min-height: 94px;
@@ -36,9 +33,9 @@ nav.nav-extended .nav-wrapper {
 /* CSS MOBILE MENU */
 nav, nav i,
 nav [class^="mdi-"], nav [class*="mdi-"],
-nav i.material-icons, nav a.button-collapse i {
+nav i.material-icons, nav a.button-collapse i { 
   height: 94px;
-  line-height: 94px;
+  line-height: 97px;
 }
 .sidenav {
   background: url('./img/menumobile.png');
@@ -46,7 +43,11 @@ nav i.material-icons, nav a.button-collapse i {
 .sidenav li>a {
   color: #fff;
   font-weight: 100;
-  text-transform: uppercase;
+  padding: 26px;  
+}
+.sidenav li a:hover {
+  background-color: transparent;
+  color: #6F7BF5;
 }
 /*LOGO E NAVBAR CSS FIM*/
 
@@ -72,14 +73,14 @@ nav i.material-icons, nav a.button-collapse i {
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-transform: uppercase;
-}/*SECTION HOME FIM*/
+}
 
 /*SECTION SOBRE INICIO*/
 .sobre {
   background-image: url('./img/textura1.png');
 }
 .sobre h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #212121;
   text-transform: uppercase;
 }
@@ -87,13 +88,12 @@ nav i.material-icons, nav a.button-collapse i {
   content: '';
   display: block;
   width: 100px;
-  border-top: 2px solid #6F7BF5;
+  border-top: 1px solid #2dc7d0;
   margin: 15px auto;
 }
 .sobre p {
   line-height: 2rem;
   text-align: justify;
-  text-transform: uppercase;
 }
 .sobre .missao-visao-valores {
   padding: 20px 0;
@@ -110,9 +110,70 @@ nav i.material-icons, nav a.button-collapse i {
 .sobre .missao-visao-valores p {
   color: #fff;
   text-align: center;
-}/*SECTION SOBRE FIM*/
+}
 
+.servicos {
+  background-image: url('./img/textura2.png');
+}
 
+.servicos h2 {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.servicos h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  border-top: 1px solid #2dc7d0;
+  margin: 15px auto;
+}
+.servicos p {
+  color: #fff;
+  line-height: 1.8rem;
+}
+
+.row {
+  margin-bottom:0;
+}
+
+.contato {
+  background-image: url('img/textura1.png');
+}
+.contato h2 {
+  font-size: 2rem;
+  color: rgb(10, 10, 10);
+  text-transform: uppercase;
+}
+.contato h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  border-top: 1px solid #2dc7d0;
+  margin: 15px auto;
+}
+.contato .mapa {
+  min-height: 500px;
+}
+.contato .mapa iframe {
+  width: 100%;
+  min-height: 600px;
+  border: none;
+}
+.contato .informacoes {
+  background-image: url('./img/textura2.png');
+  min-height: 600px;
+  padding: 30px;
+}
+.contato h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.contato .formulario {
+  min-height: 600px;
+  padding: 30px;
+}
 
 /*RESPONSIVE MEDIA INICIO*/
 /* SMARTPHONE */
@@ -127,9 +188,15 @@ nav i.material-icons, nav a.button-collapse i {
   .container {
     width: 85%;
   }  
+  nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 64px;
+    line-height: 98px;
 }
 /* DESKTOP */
 @media only screen and (min-width: 993px) {
+  .bloco {
+    min-height: 100%;
+  }
   .banner h2 {
     font-size: 3.5rem;
   }
@@ -137,4 +204,4 @@ nav i.material-icons, nav a.button-collapse i {
     width: 90%;
   }
 }
-/*RESPONSIVE MEDIA FIM*/
+}

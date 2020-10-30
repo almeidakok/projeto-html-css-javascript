@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KeyongCode Developer</title>
     <link rel="icon" href="img/meu site.png">
-    <!--GOOGLE ICONS-->
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--MATERIALIZE CSS-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!--STYLE CSS-->
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <!--MENU MOBILE-->
         <ul id="slide-out" class="sidenav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#unidade">Unidade</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a class="sidenav-close" href="#home">Home</a></li>
+            <li><a class="sidenav-close" href="#sobre">Sobre</a></li>
+            <li><a class="sidenav-close" href="#servicos">Serviços</a></li>
+            <li><a class="sidenav-close" href="#contato">Contato</a></li>
         </ul>
-        
-        <div class="navbar-fixed">
-        <nav class="navbar z-depth-0">
-            <div class="nav-wrapper container">
-                <h1 class="logo_text">KeyongCode Developer></h1>
-                <a href=""><img class="logo_img" src="img/KeyongCodeDeveloper.png" alt="KEYONG CODE"></a>
-                
-                <ul class="right light hide-on-med-and-down">
-                    <li><i class="material-icons">home</i></li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#unidade">Unidade</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-                
-                <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 
-            </div>
-        </nav>
+        <div class="navbar-fixed">
+            <nav class="navbar z-depth-0">
+                <div class="nav-wrapper container">
+                    <h1 class="logo_text">KeyongCode Developer></h1>
+                    <a href=""><img class="logo_img" src="img/KeyongCodeDeveloper.png" alt="KEYONG CODE"></a>
+
+                    <ul class="right light hide-on-med-and-down">
+                        <li><i class="material-icons">home</i></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+
+                    <a href="#" data-target="slide-out" class="sidenav-trigger right">
+                        <i class="material-icons">menu</i></a>
+
+                </div>
+            </nav>
         </div>
     </header>
-    <!--SECTION INICIO-->
+
+
     <section class="home bloco scrollspy" id="home">
         <div class="row container banner">
             <div class="col s12 center">
                 <h2 class="white-text">Crie seu Site na<br>KeyongCode Developer</h2>
-                <p class="white-text light">Um novo conceito em criação de Sites e Landing Pages 
-                para seu negócio digital</p>
+                <p class="white-text light">Um novo conceito em criação de Sites e Landing Pages
+                    para seu negócio digital</p>
                 <div class="row button">
                     <a href="#sobre" class="btn btn-large blue">Sobre nós</a>
                     <a href="#contato" class="btn btn-large white black-text">Contato</a>
@@ -58,9 +62,7 @@
             </div>
         </div>
     </section>
-    <!--SECTION FIM-->
 
-    <!-- SECTION SOBRE INICIO-->
     <section class="sobre bloco scrollspy" id="sobre">
         <div class="row container">
             <div class="col s12">
@@ -69,20 +71,26 @@
 
             <div class="col s12 l6">
                 <p class="light">
-                    A KeyongCode Developer chegou em Nanuque e região trazendo um novo conceito em criação de Sites e Landing Pages, para seu negocio digital.<br>
+                    A KeyongCode chegou trazendo um novo conceito em criação de Sites e Landing Pages, para seu negocio
+                    digital.<br>
                     Site acessível para todo tipo de dispositivo (celular, tablet, computador.<br>
                     Um único site que se adpta automaticamente.<br>
                     Proporciona ótima experiência para todos os usuários do site.<br>
                     Buscadores como Google priorizam sites responsivos.<br>
-                    Conheça todas as vantagens de ter seu site com design responsivo.
+                    Seu sucesso é nosso sucesso e nossa responsabilidade é elaborar projetos que sejam criativos, de
+                    alta qualidade e inovadores, para tanto, a KeyongCode dispõe de uma equipe altamente capacitada a
+                    garantir a satisfação de seus clientes.<br>
+                    Conheça todas as vantagens de ter seu site com design responsivo.<br>
+                    Pensou em expandir com seu negócio? Nós temos a solução!<br>
+                    Contate-nos hoje e descubra serviços rápidos, confiáveis e com visão de futuro.
                 </p>
             </div>
 
             <div class="col s12 l6">
                 <div class="carousel carousel-slider">
-                    <a href="#one" class="carousel-item"><img src="./img/banner-1.jpg" alt="Imagem institucional"></a>
-                    <a href="#two" class="carousel-item"><img src="./img/banner-2.jpg" alt="Imagem institucional"></a>
-                    <a href="#three" class="carousel-item"><img src="./img/banner-3.jpg" alt="Imagem institucional"></a>
+                    <a class="carousel-item"><img src="./img/banner-1.jpg" alt="Imagem institucional"></a>
+                    <a class="carousel-item"><img src="./img/banner-2.jpg" alt="Imagem institucional"></a>
+                    <a class="carousel-item"><img src="./img/banner-3.jpg" alt="Imagem institucional"></a>
                 </div>
             </div>
 
@@ -93,19 +101,40 @@
                 <article class="item col s12 m4 center">
                     <span class="icon"><i class="material-icons medium">directions_run</i></span>
                     <h3 class="light">Missão</h3>
-                    <p class="light"></p>
+                    <p class="light">
+                        Desenvolver sistemas web utilizando tecnologias de ponta, garantindo a qualidade final
+                        dos projetos disponibilizados.
+                        Proporcionarmos a nossos colaboradores a possibilidade de crescimento profissional e humano,
+                        compartilhando com eles o nosso sucesso e nossa consolidação no segmento em que atuamos.<br>
+                        Nós somos aquilo que fazemos repetidamente. Excelência aqui não é um modo de agir, mas um
+                        hábito.
+                    </p>
                 </article>
 
                 <article class="item col s12 m4 center">
                     <span class="icon"><i class="material-icons medium">visibility</i></span>
                     <h3 class="light">Visão</h3>
-                    <p class="light"></p>
+                    <p class="light">
+                        Sermos referência no segmento de desenvolvimento de websites e sistemas web sob demanda, e
+                        também na oferta de serviço relacionado a website de qualidade com baixo custo, agregando
+                        visibilidade e valor aos negócios de nossos clientes.<br>
+                        Sermos vistos por nossos clientes como parceiros fundamentais no desenvolvimento de soluções que
+                        signifiquem um diferencial competitivo em seu segmento de atuação e garantam a qualidade final
+                        dos produtos e serviços apresentados.
+                    </p>
                 </article>
 
                 <article class="item col s12 m4 center">
                     <span class="icon"><i class="material-icons medium">star_rate</i></span>
                     <h3 class="light">Valores</h3>
-                    <p class="light"></p>
+                    <p class="light">
+                        Inovação: Investir continuamente em novas tecnologias e na capacitação de seus profissionais;
+                        Compromisso com o cliente: Foco na excelência do atendimento ao cliente, cumprimento integral
+                        dos prazos e dos objetivos estabelecidos;
+                        Ética: Agir profissionalmente, respeitando todas as partes envolvidas nos processos;
+                        Qualidade: Assegurar a qualidade de todos os processos, buscando sempre uma melhoria continua
+                        para garantir os melhores serviços e produtos aos clientes.
+                    </p>
                 </article>
 
             </div>
@@ -113,39 +142,237 @@
         </div>
 
     </section>
-    
-    <!--JQUERY-->
+
+    <section class="servicos bloco scrollspy" id="servicos">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2>Serviços</h2>
+                <p>Cada Projeto é Único, por Isso Analisamos Cada Caso de forma distinta.
+                    Um SITE é a sua identidade na internet, por isso você precisa de algo profissional.<br>
+                    Criamos seu Site Profissional
+                    gostaria de atrair Novos Clientes com um Site Fantástico e Personalizado, por um preço que cabe no
+                    seu bolso?
+                    Nos Vamos Te Ajudar!</p>
+            </div>
+        </div>
+
+        <div class="row container">
+            <article class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wordpress.jpg" alt="Wordpress" class="materialboxed" width="650">
+                        <a href="#wordpress-modal" class="btn btn-floating halfway-fab blue-logo modal-trigger">
+                            <i class="material-icons">more_horiz</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Wordpress</h3>
+                        <p1 class="light">O WordPress é o CMS mais usado no mundo, e por bons motivos.<br>
+                            Além de flexível, ele conta com várias outras vantagens</p1>
+                    </div>
+                </div>
+            </article>
+            <!-- Modal Structure -->
+            <div id="wordpress-modal" class="modal">
+                <div class="modal-content">
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn blue-logo modal-action modal-close">Sair</a>
+
+                </div>
+            </div>
+
+            <article class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wordpress.jpg" alt="Wordpress" class="materialboxed" width="650">
+                        <a href="#wordpress-modal" class="btn btn-floating halfway-fab blue-logo modal-trigger">
+                            <i class="material-icons">more_horiz</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Wordpress</h3>
+                        <p1 class="light">O WordPress é o CMS mais usado no mundo, e por bons motivos.<br>
+                            Além de flexível, ele conta com várias outras vantagens</p1>
+                    </div>
+                </div>
+            </article>
+            <!-- Modal Structure -->
+            <div id="wordpress-modal" class="modal">
+                <div class="modal-content">
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn blue-logo modal-action modal-close">Sair</a>
+
+                </div>
+            </div>
+
+            <article class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wordpress.jpg" alt="Wordpress" class="materialboxed" width="650">
+                        <a href="#wordpress-modal" class="btn btn-floating halfway-fab blue-logo modal-trigger">
+                            <i class="material-icons">more_horiz</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Wordpress</h3>
+                        <p1 class="light">O WordPress é o CMS mais usado no mundo, e por bons motivos.<br>
+                            Além de flexível, ele conta com várias outras vantagens</p1>
+                    </div>
+                </div>
+            </article>
+            <!-- Modal Structure -->
+            <div id="wordpress-modal" class="modal">
+                <div class="modal-content">
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn blue-logo modal-action modal-close">Sair</a>
+
+                </div>
+            </div>
+
+            <article class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/wordpress.jpg" alt="Wordpress" class="materialboxed" width="650">
+                        <a href="#wordpress-modal" class="btn btn-floating halfway-fab blue-logo modal-trigger">
+                            <i class="material-icons">more_horiz</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Wordpress</h3>
+                        <p1 class="light">O WordPress é o CMS mais usado no mundo, e por bons motivos.<br>
+                            Além de flexível, ele conta com várias outras vantagens</p1>
+                    </div>
+                </div>
+            </article>
+            <!-- Modal Structure -->
+            <div id="wordpress-modal" class="modal">
+                <div class="modal-content">
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn blue-logo modal-action modal-close">Sair</a>
+
+                </div>
+            </div>
+            
+    </section>
+
+    <section class="contato bloco scrollspy" id="contato">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="titulo light">Contato</h2>
+            </div>
+            
+            <div class="col s12 m6 l4 hide-on-med-only">
+                <div class="mapa transparent">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.0155921863566!2d-40.36966768557293!3d-17.83790398781007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb53936ffe92497%3A0x1b5839191b3280d8!2sR.%20Nel%C3%ADcio%20Cordeiro%2C%2060%20-%20Nanuque%2C%20MG%2C%2039860-000!5e0!3m2!1spt-BR!2sbr!4v1604095375502!5m2!1spt-BR!2sbr"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            
+            <div class="col s12 m6 l4">
+                <div class="informacoes white-text">
+                    <h4>Redes Sociais</h4>
+                    <p class="light"> Criação de sites de acordo com a real necessidade do cliente</p>
+                    <a href="" class="btn-floating blue-logo"><i class="fa fa-facebook"></i></a>
+                    <a href="" class="btn-floating blue-logo"><i class="fa fa-google"></i></a>
+                    <a href="" class="btn-floating blue-logo"><i class="fa fa-instagram"></i></a>
+                    <h4>Endereço</h4>
+                    <p class="light">Rua Dr. Nelicio Cordeiro, 60<br>
+                    Israel Pinheiro, Nannuque-MG</p>
+                    <h4>Contatos</h4>
+                    <p class="light">
+                        (33) 99196-3591<br>
+                        (33) 99132-7376
+                    </p>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="formulario white black-text">
+                    <h4>Fale Conosco</h4>
+                    <p class="light">Dúvidas, criticas ou sujestões? Entre em contato conosco, será muito importante</p>
+                    <form action="" method="post">
+                        <div class="input-field">
+                            <input type="text" name="name" id="name">
+                            <label for="name">Digite seu nome</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" name="email" id="email">
+                            <label for="email">Digite seu email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="subject" id="subject">
+                            <label for="subject">Assunto</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea class="materialize-textarea" name="message" id="" cols="30" rows="10"></textarea>
+                            <label for="message">Mensagem</label>
+                        </div>
+                        <button class="btn blue-logo" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <!--MATERIALIZE JS-->
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!--JAVASCRIPT-->
+
     <script>
-    //INICIALIZÇÃO
-        // MENU MOBILE
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
-        // LINK INTERNO
-        $(".scrollspy").scrollspy({
-            scrolloffset: 0
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
         });
-       
-    });
 
-    $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true
-    });
+        $(document).ready(function () {
+            $('.scrollspy').scrollSpy();
+        });
 
-    // NAV COLOR
-    $(window).on("scroll", function(){
-        if($(window).scrollTop() > 100) {
-            $(".navbar").addClass("nav-color")
-        } else {
-            $(".navbar").removeClass("nav-color")
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+        });
+
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
+        });
+
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+
+        function autoplay() {
+            $('.carousel').carousel('next');
+            setTimeout(autoplay, 4500);
         }
-    })
+        autoplay();
+
+
+
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 100) {
+                $(".navbar").addClass("nav-color")
+            } else {
+                $(".navbar").removeClass("nav-color")
+            }
+        })
     </script>
 </body>
+
 </html>
